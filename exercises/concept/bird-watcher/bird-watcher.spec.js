@@ -20,13 +20,13 @@ describe('totalBirdCount', () => {
 
 describe('birdsInWeek', () => {
   test('calculates the number of birds in the first week', () => {
-    const birdsPerDay = [3, 0, 5, 1, 0, 4, 1, 0, 3, 4, 3, 0, 8, 0];
+    const birdsPerDay = [3, 0, 5, 1, 0, 4, 1, 3, 3, 4, 3, 0, 8, 0];
     expect(birdsInWeek(birdsPerDay, 1)).toBe(14);
   });
 
   test('calculates the number of birds for a week in the middle of the log', () => {
     // prettier-ignore
-    const birdsPerDay = [4, 7, 3, 2, 1, 1, 2, 0, 2, 3, 2, 7, 1, 3, 0, 6, 5, 3, 7, 2, 3];
+    const birdsPerDay = [4, 7, 3, 2, 1, 1, 2, 0, 2, 3, 2, 7, 1, 3, 2, 6, 5, 3, 7, 2, 3];
     expect(birdsInWeek(birdsPerDay, 2)).toBe(18);
   });
 
